@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} Shorten URL {% endblock %}
+
+{% block content %}
+
+<form action="#" method="POST">
+    <div class="form-group">
+
+    <label for="url"> Enter an URL </label>
+    <input type="url" class="form-control" name="nm" id="url" style="width: 50%;"
+    placeholder="Please Enter URL"
+    pattern="https://.*" size="100" required> <br>
+
+    <label for="url1"> Enter Desiered Short Url Name </label>
+    <input type="url1" class="form-control" name="shortname" id="url1" style="width: 50%;"
+    placeholder="Please Enter Short Name for URL"
+    size="100">
+
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"> 
+</form>
+
+{% endblock %}
